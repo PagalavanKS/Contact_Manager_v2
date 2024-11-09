@@ -22,7 +22,7 @@ function AllContacts() {
       setLoading(true);
       try {
         const res = await fetch(
-          `https://contact-manager-v2.onrender.com/api/mycontacts`,
+          `http://localhost:8800/api/mycontacts`,
           {
             method: "GET",
             headers: {
@@ -48,7 +48,7 @@ function AllContacts() {
     if (window.confirm(`Are you sure do you want to delete ${name} contact`)) {
       try {
         const res = await fetch(
-          `https://contact-manager-v2.onrender.com/api/delete/${id}`,
+          `http://localhost:8800/api/delete/${id}`,
           {
             method: "DELETE",
             headers: {
