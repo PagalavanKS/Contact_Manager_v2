@@ -8,8 +8,7 @@ module.exports = (req, res, next) => {
   if (authHeader && authHeader.startsWith("Bearer")) {
     const token = authHeader.split(" ")[1];
 
-    JWT_SECRET = "secretkey";
-    jwt.verify(token, JWT_SECRET, async (err, payload) => {
+    jwt.verify(token, process.env.JWT_SECRET, async (err, payload) => {
       try {
         if (err) {
           return res.status(401).json({ error: "Unauthorized!" });

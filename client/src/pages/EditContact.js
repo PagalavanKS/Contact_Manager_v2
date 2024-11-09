@@ -27,7 +27,7 @@ function EditContact() {
     event.preventDefault();
 
     const res = await fetch(
-      `http://localhost:8800/api/contact`,
+      `https://contact-manager-v2.onrender.com/api/contact`,
       {
         method: "PUT",
         headers: {
@@ -52,7 +52,7 @@ function EditContact() {
       setLoading(true);
       try {
         const res = await fetch(
-          `http://localhost:8800/api/contact/${id}`,
+          `https://contact-manager-v2.onrender.com/api/contact/${id}`,
           {
             method: "GET",
             headers: {

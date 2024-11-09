@@ -20,7 +20,7 @@ export const AuthContextProvider = ({ children }) => {
   const checkUserLoggedIn = async () => {
     try {
       const res = await fetch(
-        "http://localhost:8800/api/me",
+        "https://contact-manager-v2.onrender.com/api/me",
         {
           method: "GET",
           headers: {
@@ -54,7 +54,7 @@ export const AuthContextProvider = ({ children }) => {
   const loginUser = async (userData) => {
     try {
       const res = await fetch(
-        `http://localhost:8800/api/login`,
+        `https://contact-manager-v2.onrender.com/api/login`,
         {
           method: "POST",
           headers: {
@@ -81,7 +81,7 @@ export const AuthContextProvider = ({ children }) => {
   const registerUser = async (userData) => {
     try {
       const res = await fetch(
-        `http://localhost:8800/api/register`,
+        `https://contact-manager-v2.onrender.com/api/register`,
         {
           method: "POST",
           headers: {

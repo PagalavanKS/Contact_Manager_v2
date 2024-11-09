@@ -22,7 +22,7 @@ function AllContacts() {
       setLoading(true);
       try {
         const res = await fetch(
-          `http://localhost:8800/api/mycontacts`,
+          `https://contact-manager-v2.onrender.com/api/mycontacts`,
           {
             method: "GET",
             headers: {

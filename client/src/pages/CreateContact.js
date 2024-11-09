@@ -21,7 +21,7 @@ function CreateContact() {
     event.preventDefault();
 
     const res = await fetch(
-      `http://localhost:8800/api/contact`,
+      `https://contact-manager-v2.onrender.com/api/contact`,
       {
         method: "POST",
         headers: {
