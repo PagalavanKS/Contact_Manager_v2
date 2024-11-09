@@ -6,8 +6,8 @@ const connectDB = async () => {
     await mongoose.connect("mongodb+srv://pagalavanks22cse:pagalavan@conatct.93gsx.mongodb.net/?retryWrites=true&w=majority&appName=conatct", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      serverSelectionTimeoutMS: 30000, // 30 seconds timeout
-      socketTimeoutMS: 45000, // 45 seconds socket timeout
+      serverSelectionTimeoutMS: 30000, 
+      socketTimeoutMS: 45000,
     });
 
     console.log("Connection to database established...");
